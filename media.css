@@ -1,0 +1,55 @@
+@media (max-width: 1130px) {
+
+    .logo {
+        margin: 0 0 0 0;
+    }
+
+    .container-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 25px 15px 60px 0px;
+    }
+
+    .container-content a {
+        width: 490px;
+        height: 250px
+    }
+
+    .container-content a:first-child {
+        margin-left: 60px;
+        margin: 0 0 40px 0;
+    }
+
+    .container-content a:nth-child(2) {
+        margin-right: 60px;
+    }
+
+    .subdomain-link {
+        margin: 210px 0 0 0;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .container-content {
+        padding: 25px 15px 60px 0px;
+    }
+
+    .container-content a {
+        width: 350px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .container-content a {
+        width: 320px;
+        background-position: center 10px;
+    }
+
+    .subdomain-link {
+        margin: 177px 0 0 0;
+    }
+}
