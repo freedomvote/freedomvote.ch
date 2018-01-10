@@ -1,5 +1,6 @@
 @media (max-width: 1130px) {
 
+    /* Zürich und Bern */
     .logo {
         margin: 0 0 0 0;
     }
@@ -28,6 +29,21 @@
     .subdomain-link {
         margin: 210px 0 0 0;
     }
+
+    /* Gesamte Schweiz */
+
+    .container-content-archive {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        padding: 25px 15px 60px 0px;
+    }
+
+    .container-content-archive a {
+        width: 490px;
+        height: 250px;
+        margin: 140px 0 0 0;
+    }
 }
 
 @media (max-width: 640px) {
@@ -39,10 +55,25 @@
     .container-content a {
         width: 350px;
         flex-shrink: 0;
+        background-position: center 20px;
+    }
+
+    .container-content-archive {
+        padding: 25px 15px 60px 0px;
+    }
+
+    .container-content-archive a {
+        width: 350px;
+        flex-shrink: 0;
+        background-position: center 20px;
+    }
+
+    .subdomain-link {
+        margin: 200px 0 0 0;
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 365px) {
 
     .container-content a {
         width: 320px;
@@ -51,5 +82,10 @@
 
     .subdomain-link {
         margin: 177px 0 0 0;
+    }
+
+    .container-content-archive a {
+        width: 320px;
+        background-position: center 10px;
     }
 }

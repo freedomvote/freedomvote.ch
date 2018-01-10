@@ -3,7 +3,7 @@
 .logo {
     display: flex;
     justify-content: center;
-    margin: 100px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 .freedomvote-logo {
@@ -13,9 +13,9 @@
 /* Content */
 
 .container-content {
-    padding: 120px 15px 60px 15px;
+    padding: 60px 15px 0px 15px;
     width: 1100px;
-    height: 450px;
+    height: 350px;
     margin: 0 auto 0 auto;
     display: flex;
     flex-direction: row;
@@ -28,18 +28,6 @@
     width: 50%;
     height: 300px;
     text-decoration: none;
-}
-
-.subdomain-link {
-    padding: 4px 8px;
-    font: 20px Sans-Serif;
-    margin: 260px 0 0 0;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
-    z-index: 1;
-}
-
-.container-content a {
     background-size: auto 70%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -62,6 +50,16 @@
     );
  }
 
+.subdomain-link {
+    padding: 4px 8px;
+    font: 20px Sans-Serif;
+    margin: 260px 0 0 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+    z-index: 1;
+}
+
+
 .container-content a:first-child {
     background-image: url("zuercher_wappen.png");
     margin-right: 60px;
@@ -70,4 +68,44 @@
 .container-content a:nth-child(2) {
     background-image: url("berner_wappen.png");
     margin-left: 60px;
+}
+
+.container-content-archive {
+    padding: 0px 15px 0px 15px;
+    width: 1100px;
+    height: 345px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-content-archive a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 490px;
+    height: 300px;
+    text-decoration: none;
+    background-size: auto 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
+    position: relative;
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.2);
+    background-image: url("ch_flagge.png");
+}
+
+.container-content-archive a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+        rgba(0,0,0,0.0) 0%,
+        rgba(0,0,0,0.0) 60%,
+        rgba(0,0,0,0.1) 100%
+    );
 }
