@@ -1,111 +1,69 @@
-/* Logo */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: .5rem;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  padding: 2rem 0;
+}
 
 .logo {
-    display: flex;
-    justify-content: center;
-    margin: 40px 0 0 0;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 2.5rem;
 }
-
-.freedomvote-logo {
-    width: 250px;
-}
-
-/* Content */
 
 .container-content {
-    padding: 60px 15px 0px 15px;
-    width: 1100px;
-    height: 350px;
-    margin: 0 auto 0 auto;
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.container-content a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 300px;
-    text-decoration: none;
-    background-size: auto 70%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #F8F8F8;
-    position: relative;
-    box-shadow: 3px 3px 7px rgba(0,0,0,0.2);
+.container-content-item {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  height: 400px;
+  padding: 1rem;
+  text-decoration: none;
+  background-size: auto 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.15);
+  transition: box-shadow 200ms ease;
+  color: rgba(0,0,0,0.9);
 }
 
-.container-content a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient(
-        rgba(0,0,0,0.0) 0%,
-        rgba(0,0,0,0.0) 60%,
-        rgba(0,0,0,0.1) 100%
-    );
- }
-
-.subdomain-link {
-    padding: 4px 8px;
-    font: 20px Sans-Serif;
-    margin: 260px 0 0 0;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
-    z-index: 1;
+.container-content-item + .container-content-item {
+  margin-top: 2rem;
 }
 
-
-.container-content a:first-child {
-    background-image: url("zuercher_wappen.png");
-    margin-right: 60px;
+.container-content-item:hover {
+  box-shadow: 2px 2px 25px rgba(0,0,0,0.2);
 }
 
-.container-content a:nth-child(2) {
-    background-image: url("berner_wappen.png");
-    margin-left: 60px;
+.container-content--archive .container-content-item {
+  opacity: .6;
+  transition: opacity 200ms ease;
 }
 
-.container-content-archive {
-    padding: 0px 15px 0px 15px;
-    width: 1100px;
-    height: 345px;
-    margin: 0 auto 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.container-content--archive .container-content-item:hover {
+  opacity: 1;
 }
 
-.container-content-archive a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 490px;
-    height: 300px;
-    text-decoration: none;
-    background-size: auto 70%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #F8F8F8;
-    position: relative;
-    box-shadow: 3px 3px 7px rgba(0,0,0,0.2);
-    background-image: url("ch_flagge.png");
-}
-
-.container-content-archive a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: linear-gradient(
-        rgba(0,0,0,0.0) 0%,
-        rgba(0,0,0,0.0) 60%,
-        rgba(0,0,0,0.1) 100%
-    );
-}
+.container-content-item--stadtzh18 { background-image: url(zuercher_wappen.png); }
+.container-content-item--ktbe18 { background-image: url(berner_wappen.png); }
+.container-content-item--ch15 { background-image: url(ch_flagge.png); }
